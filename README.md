@@ -1,6 +1,6 @@
-# Remix CT8 template
+# Remix Render template
 
-[![CI](https://github.com/pawelblaszczyk5/remix-ct8-template/actions/workflows/CI.yml/badge.svg)](https://github.com/pawelblaszczyk5/remix-ct8-template/actions/workflows/CI.yml) [![Deploy](https://github.com/pawelblaszczyk5/remix-ct8-template/actions/workflows/Deploy.yml/badge.svg)](https://github.com/pawelblaszczyk5/remix-ct8-template/actions/workflows/Deploy.yml) [![codecov](https://codecov.io/gh/pawelblaszczyk5/remix-ct8-template/branch/main/graph/badge.svg?token=KC5URG3TMY)](https://codecov.io/gh/pawelblaszczyk5/remix-ct8-template)
+[![CI/CD](https://github.com/pawelblaszczyk5/remix-render/actions/workflows/CI_CD.yml/badge.svg)](https://github.com/pawelblaszczyk5/remix-render/actions/workflows/CI_CD.yml) [![codecov](https://codecov.io/gh/pawelblaszczyk5/remix-render/branch/main/graph/badge.svg?token=Z27Y6J8D3Y)](https://codecov.io/gh/pawelblaszczyk5/remix-render)
 
 Remix boilerplate for building modern web applications. As I plan to often use it, I decided to make this template.
 
@@ -8,13 +8,12 @@ Remix boilerplate for building modern web applications. As I plan to often use i
 
 Remix is a full-stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff. That's Remix description from their website.
 
-CT8 is a free hosting that you can use to host your apps and databases.
+Render is a modern PaaS solution that lets you host your apps and much more
 
 ## CT8 integration
 
-- `app.js` is the entrypoint required by CT8
-- `public` directory is implicitly handled by Nginx, therefore `static` is used in place to manually config caching, etc.
-- Deploying and restarting app through FTP and SSH automatically via GitHub Actions
+- Add health check URL at `/healthz`
+- Deploying app via webhook after CI completed via actions
 
 ## Other stuff
 
@@ -24,4 +23,4 @@ CT8 is a free hosting that you can use to host your apps and databases.
 - Tailwind for styling with dark mode setup (check out `ThemeSetter` component), also PostCSS for auto-prefixing and minifying
 - Storybook with essential addons for designing components in isolation
 - Express used as node.js framework with strict caching configured
-- GitHub Actions for CI/CD pipeline
+- Github Actions for CI/CD pipeline
