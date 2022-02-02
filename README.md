@@ -4,13 +4,13 @@
 
 Remix boilerplate for building modern web applications. As I plan to often use it, I decided to make this template.
 
-## Remix + CT8
+## Remix + Render
 
 Remix is a full-stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff. That's Remix description from their website.
 
 Render is a modern PaaS solution that lets you host your apps and much more
 
-## CT8 integration
+## Render integration
 
 - Add health check URL at `/healthz`
 - Deploying app via webhook after CI completed via actions
